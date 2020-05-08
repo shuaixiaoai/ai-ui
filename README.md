@@ -52,3 +52,4 @@ react会在执行当前effect之前执行上一个effect的清除
 #### 自定义Hook
 1. 将组件逻辑提取到可重用的函数中。 目前共享组件之间的状态逻辑： render props、 高阶组件
 2.hook必须以use开头
+### tijiaos
