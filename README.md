@@ -42,3 +42,13 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+### 清除函数绑定
+如果useEffect返回一个函数， react会在执行清除操作（组件卸载的时候）的时候， 会执行这个返回的函数
+
+react会在执行当前effect之前执行上一个effect的清除
+
+#### 自定义Hook
+1. 将组件逻辑提取到可重用的函数中。 目前共享组件之间的状态逻辑： render props、 高阶组件
+2.hook必须以use开头

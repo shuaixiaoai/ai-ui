@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Button, { ButtonType, ButtonSize } from './components/Button/button'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button autoFocus btnType={ButtonType.Default} className="hahah">Hello</Button>
+      <Button btnType={ButtonType.Primary}>Hello</Button>
+      <Button btnType={ButtonType.Danger}>Hello</Button>
+      <hr />
+      <Button btnType={ButtonType.Default} size={ButtonSize.Large}>Hello</Button>
+      <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>Hello</Button>
+      <Button btnType={ButtonType.Danger} size={ButtonSize.Large}> Hello</Button>
+      <hr />
+      <Button btnType={ButtonType.Default} size={ButtonSize.Small}>Hello</Button>
+      <Button btnType={ButtonType.Primary} size={ButtonSize.Small}>Hello</Button>
+      <Button btnType={ButtonType.Danger} size={ButtonSize.Small}> Hello</Button>
+      <hr />
+      <Button btnType={ButtonType.Primary} size={ButtonSize.Large} disabled>Hello</Button>
+      <Button btnType={ButtonType.Primary} size={ButtonSize.Small} disabled>Hello</Button>
+      <hr />
+      <Button btnType={ButtonType.Link} href="www.baidu.com">BaiDu Link</Button>
+      <Button btnType={ButtonType.Link} href="www.baidu.com" disabled>BaiDu Link</Button>
+      <h2>Hello World!</h2>
+      <h3>Hello World!</h3>
+      <hr />
+      <code>
+        const a = 'b'
+      </code>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

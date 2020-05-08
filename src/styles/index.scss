@@ -1,0 +1,11 @@
+// scss的@import不会增加额外的请求
+// config
+@import 'variables';
+// layout
+@import 'reboot';
+
+// mixin
+@import 'mixin';
+
+// button
+@import '../components/Button/style.scss'
